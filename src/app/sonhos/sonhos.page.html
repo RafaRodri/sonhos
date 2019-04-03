@@ -1,0 +1,195 @@
+<script src="../../../../ionic/src/providers/establishment/establishment.provider.ts"></script>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Mural dos sonhos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-checkbox></ion-checkbox>
+  <ion-label>Todos</ion-label>
+  <ion-checkbox></ion-checkbox>
+  <ion-label>Ativos</ion-label>
+  <ion-checkbox></ion-checkbox>
+  <ion-label>Concluídos</ion-label>
+
+  <!--<ion-grid>-->
+    <!--<ion-row *ngFor="let dream of dreams">-->
+      <!--<ion-col>{{dream.name}}</ion-col>-->
+    <!--</ion-row>-->
+  <!--</ion-grid>-->
+
+  <ion-grid class="mural">
+    <ion-row>
+      <ion-col [size]="12" [sizeXl]="6" *ngFor="let category of categories">
+        <ion-row>
+          <ion-col>
+            <ion-text>
+              <h3>{{category.name}}</h3>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+
+        <app-sonho [category]="category.id"></app-sonho>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <!--<ion-grid class="mural">-->
+    <!--<ion-row>-->
+      <!--<ion-col [size]="12" [sizeXl]="6">-->
+        <!--<ion-row>-->
+          <!--<ion-col>-->
+            <!--<ion-text>-->
+              <!--<h3>Espiritualidade</h3>-->
+            <!--</ion-text>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+        <!--<ion-row>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card class="ativo" (click)="showModal(1)" expand="block">-->
+              <!--<ion-img src="../../assets/img/deus.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Deus-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card class="concluido">-->
+              <!--<ion-img src="../../assets/img/hombridade.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Hombridade-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card (click)="showModal(2)" expand="block">-->
+              <!--<ion-img src="../../assets/img/mindfulness.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Mindfulness-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-col>-->
+
+      <!--<ion-col [size]="12" [sizeXl]="6">-->
+        <!--<ion-row>-->
+          <!--<ion-col>-->
+            <!--<ion-text>-->
+              <!--<h3>Profissional</h3>-->
+            <!--</ion-text>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+        <!--<ion-row>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card class="ativo">-->
+              <!--<ion-img src="../../assets/img/ti.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Emprego (TI)-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-col>-->
+
+      <!--<ion-col [size]="12" [sizeXl]="6">-->
+        <!--<ion-row>-->
+          <!--<ion-col>-->
+            <!--<ion-text>-->
+              <!--<h3>Família</h3>-->
+            <!--</ion-text>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+        <!--<ion-row>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card class="">-->
+              <!--<ion-img src="../../assets/img/casar.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Casamento-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card class="">-->
+              <!--<ion-img src="../../assets/img/familia.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Família-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card>-->
+              <!--<ion-img src="../../assets/img/pais.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Pais-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-col>-->
+
+      <!--<ion-col [size]="12" [sizeXl]="6">-->
+        <!--<ion-row>-->
+          <!--<ion-col>-->
+            <!--<ion-text>-->
+              <!--<h3>Desejos</h3>-->
+            <!--</ion-text>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+        <!--<ion-row>-->
+          <!--<ion-col [sizeXs]="6" [sizeSm]="4" [sizeMd]="3" [sizeXl]="4">-->
+            <!--<ion-card class="ativo">-->
+              <!--<ion-img src="../../assets/img/dente.jpg"></ion-img>-->
+              <!--<ion-card-header>-->
+                <!--<ion-card-title>-->
+                  <!--<i class="pin"></i>-->
+                  <!--Dente-->
+                <!--</ion-card-title>-->
+              <!--</ion-card-header>-->
+            <!--</ion-card>-->
+          <!--</ion-col>-->
+        <!--</ion-row>-->
+      <!--</ion-col>-->
+    <!--</ion-row>-->
+
+
+
+
+    <!--&lt;!&ndash;<ion-row>&ndash;&gt;-->
+      <!--&lt;!&ndash;<ion-col [size]="12" [sizeXl]="6">&ndash;&gt;-->
+      <!--&lt;!&ndash;</ion-col>&ndash;&gt;-->
+      <!--&lt;!&ndash;<ion-col [size]="12" [sizeXl]="6">&ndash;&gt;-->
+
+      <!--&lt;!&ndash;</ion-col>&ndash;&gt;-->
+      <!--&lt;!&ndash;<ion-col [size]="12" [sizeXl]="6">&ndash;&gt;-->
+
+      <!--&lt;!&ndash;</ion-col>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ion-row>&ndash;&gt;-->
+  <!--</ion-grid>-->
+</ion-content>

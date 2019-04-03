@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Novo sonho
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Categoria</ion-label>
+          <ion-select value="wishes" okText="Ok" cancelText="Cancelar">
+            <ion-select-option value="wishes">Desejos</ion-select-option>
+            <ion-select-option value="spirituality">Espiritualidade</ion-select-option>
+            <ion-select-option value="family">Família</ion-select-option>
+            <ion-select-option value="professional">Profissional</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Título</ion-label>
+          <ion-input clearInput></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Descrição</ion-label>
+          <ion-textarea clearInput></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Imagem</ion-label>
+          <ion-input type="file" clearInput></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-button expand="full" no-margin>
+    Salvar
+  </ion-button>
+</ion-content>

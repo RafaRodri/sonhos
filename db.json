@@ -1,0 +1,106 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Profissional",
+      "rating": 2
+    },
+    {
+      "id": 2,
+      "name": "Família",
+      "rating": 3
+    },
+    {
+      "id": 3,
+      "name": "Espiritualidade",
+      "rating": 1
+    },
+    {
+      "id": 4,
+      "name": "Desejos",
+      "rating": 4
+    }
+  ],
+  "dream": [
+    {
+      "id": 1,
+      "category": 1,
+      "imagePath": "ti.jpg",
+      "imageSuccessPath": null,
+      "name": "Emprego (TI)",
+      "description": "Conoseguir um emprego na área de Tecnologia da Informação.",
+      "dateSuccess": null,
+      "situation": "active"
+    },
+    {
+      "id": 2,
+      "category": 2,
+      "imagePath": "casar.jpg",
+      "imageSuccessPath": null,
+      "name": "Casar",
+      "description": "Realizar o casamento.",
+      "dateSuccess": null,
+      "situation": null
+    },
+    {
+      "id": 3,
+      "category": 3,
+      "imagePath": "deus.jpg",
+      "imageSuccessPath": null,
+      "name": "Deus",
+      "description": "Estar mais próximo a Deus.",
+      "dateSuccess": null,
+      "situation": "active"
+    },
+    {
+      "id": 4,
+      "category": 3,
+      "imagePath": "hombridade.jpg",
+      "imageSuccessPath": null,
+      "name": "Hombridade",
+      "description": "Participar da escola de hombridade.",
+      "dateSuccess": null,
+      "situation": "completed"
+    },
+    {
+      "id": 5,
+      "category": 3,
+      "imagePath": "mindfulness.jpg",
+      "imageSuccessPath": null,
+      "name": "Mindfulness",
+      "description": "Praticar mindfulness.",
+      "dateSuccess": null,
+      "situation": null
+    },
+    {
+      "id": 6,
+      "category": 2,
+      "imagePath": "familia.jpg",
+      "imageSuccessPath": null,
+      "name": "Família",
+      "description": "Ter tempos de qualidade dedicados a família.",
+      "dateSuccess": null,
+      "situation": null
+    },
+    {
+      "id": 7,
+      "category": 2,
+      "imagePath": "pais.jpg",
+      "imageSuccessPath": null,
+      "name": "Pais",
+      "description": "Ter condições de ajudar os pais (com plano de saúde e viagens por exemplo).",
+      "dateSuccess": null,
+      "situation": null
+    },
+    {
+      "id": 8,
+      "category": 4,
+      "imagePath": "dente.jpg",
+      "imageSuccessPath": null,
+      "name": "Dente",
+      "description": "Fazer os tratamentos odontológicos necessários.",
+      "dateSuccess": null,
+      "situation": "active"
+    }
+  ]
+}
